@@ -1,0 +1,12 @@
+<h1 class="text-2xl font-bold truncate">
+  <%= link_to "‹", @page , class: "p-2 rounded hover:bg-gray-100"%> 
+  Edit Page
+</h1>
+<%= render "form", page: @page %>
+
+<br>
+
+<div>
+  <%= button_to "Destroy this page", @page, method: :delete, data: {turbo_confirm: "Are you sure?"}%>
+</div>
+
